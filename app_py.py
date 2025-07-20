@@ -67,20 +67,15 @@ if st.button("🎯 Predict Rent"):
     st.success(f"✅ Estimated Monthly Rent: ₹ {int(prediction):,}")
 
 
-# Custom background with CSS
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-image: url("https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1350&q=80");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+<style>
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/white-carbon.png");
+    background-color: #f2f2f2;
+    background-attachment: fixed;
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 
