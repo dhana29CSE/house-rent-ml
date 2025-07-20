@@ -66,16 +66,22 @@ if st.button("🎯 Predict Rent"):
     prediction = model.predict(features)[0]
     st.success(f"✅ Estimated Monthly Rent: ₹ {int(prediction):,}")
 
-st.markdown("""
-<style>
-.stApp {
-    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-</style>
-""", unsafe_allow_html=True)
+
+# Custom background with CSS
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 
 # --- Footer ---
